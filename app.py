@@ -51,7 +51,7 @@ def initialization():
 
     cfg.MODEL.WEIGHTS = os.path.join("https://api.github.com/repos/Tuestag/DetectionCoffeeStream/releases/assets/49141342")
     from detectron2.data.datasets import register_coco_instances
-    register_coco_instances("my_dataset_test", {}, "/content/test/_annotations.coco.json", "/content/test")
+    register_coco_instances("my_dataset_test", {}, "/test/_annotations.coco.json", "test")
     MetadataCatalog.get("my_dataset_test").thing_classes = ['CafPrueba', 'Pinton', 'Rojo', 'Sobremaduro', 'Verde']
     MetadataCatalog.get("my_dataset_test").thing_dataset_id_to_contiguous_id = {0: 0, 1: 1, 2: 2, 3: 3, 4: 4}
     # Initialize prediction model
