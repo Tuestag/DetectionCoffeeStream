@@ -15,8 +15,9 @@ from detectron2.evaluation import COCOEvaluator
 
 #PROBANDO
 import requests
+requests.get("https://github.com/Tuestag", headers = {'User-agent': 'your bot 0.1'})
 
-response = requests.get("https://api.github.com/repos/Tuestag/DetectionCoffeeStream/releases/latest")
+#response = requests.get("https://api.github.com/repos/Tuestag/DetectionCoffeeStream/releases/latest")
 
 class CocoTrainer(DefaultTrainer):
 
