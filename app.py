@@ -9,7 +9,7 @@ from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog, DatasetCatalog
 
 import os
-model = !wget https://github.com/Tuestag/DetectronCoffe/releases/download/DA_fasterRCNNR50_coffee/DA_faster_rcnn_R_50_FPN_1x.pth
+model = wget https://github.com/Tuestag/DetectronCoffe/releases/download/DA_fasterRCNNR50_coffee/DA_faster_rcnn_R_50_FPN_1x.pth
 from detectron2.engine import DefaultTrainer
 from detectron2.evaluation import COCOEvaluator
 
