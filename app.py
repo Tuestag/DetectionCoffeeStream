@@ -50,7 +50,9 @@ def initialization():
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  
     # Find a model from detectron2's model zoo. You can use the https://dl.fbaipublicfiles... url as well
 
-    cfg.MODEL.WEIGHTS = os.path.join("https://api.github.com/repos/Tuestag/DetectionCoffeeStream/releases/assets/49141342")
+    #cfg.MODEL.WEIGHTS = os.path.join("https://api.github.com/repos/Tuestag/DetectionCoffeeStream/releases/assets/49141342")
+    cfg.MODEL.WEIGHTS = os.path.join("https://github.com/Tuestag/DetectionCoffeeStream/releases/download/CoffeeDetector/DA_faster_rcnn_R_50_FPN_1x.pth")
+    
     from detectron2.data.datasets import register_coco_instances
     register_coco_instances("my_dataset_test", {}, "/test/_annotations.coco.json", "test")
     MetadataCatalog.get("my_dataset_test").thing_classes = ['CafPrueba', 'Pinton', 'Rojo', 'Sobremaduro', 'Verde']
