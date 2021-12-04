@@ -32,7 +32,7 @@ class CocoTrainer(DefaultTrainer):
   
 import base64
 
-@st.cache(allow_output_mutation=True)
+@st.cache
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
