@@ -147,7 +147,8 @@ def main():
     cfg, predictor = initialization()
 
     st.title("Detector de Granos de Café")
-    st.write("Suba la imagen en la que desea realizar las predicciones")
+    st.write("Suba la imagen en la que desea realizar las predicciones.")
+    st.write("Cada vez que suba una image, se reemplazará la anterior.")
     
     # Retrieve image
     uploaded_img = st.file_uploader("Choose an image...", type=['jpg', 'jpeg', 'png'])
@@ -158,7 +159,7 @@ def main():
         outputs = inference(predictor, img)
         out_image = output_image(cfg, img, outputs)
         st.image(out_image, caption='Processed Image', use_column_width=True)        
-
+        st.write("Muchas gracias por utilizar esta aplicación.")
 
 if __name__ == '__main__':
     main()
