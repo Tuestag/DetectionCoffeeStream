@@ -33,10 +33,10 @@ class CocoTrainer(DefaultTrainer):
 import base64
 
 ########################
-main_bg = "Clases.png"
+main_bg = "Background.png"
 main_bg_ext = "png"
 
-side_bg = "Clases.png"
+side_bg = "Background.png"
 side_bg_ext = "png"
 
 st.markdown(
