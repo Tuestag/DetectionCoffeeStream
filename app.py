@@ -147,8 +147,7 @@ def main():
     cfg, predictor = initialization()
 
     st.title("Detector de Granos de Café")
-    st.write("Suba la imagen en la que desea realizar las predicciones.")
-    st.write("Cada vez que suba una imagen se reemplazará la anterior.")
+    st.write("Estimado usuario, para hacer uso de esta app debe subir una imagen de granos de café en la cual se realizará la detección a partir de la pigmentación que estos presentan. Cada vez que suba una imagen, se reemplazará la anterior").
     
     # Retrieve image
     uploaded_img = st.file_uploader("Choose an image...", type=['jpg', 'jpeg', 'png'])
