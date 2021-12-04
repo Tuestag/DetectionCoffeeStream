@@ -52,7 +52,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg("Clases.png")
+set_png_as_page_bg("Arcane.S01E07.The.Boy.Savior.12.27.png)
 
 @st.cache(persist=True)
 def initialization():
