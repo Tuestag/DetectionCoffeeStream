@@ -146,9 +146,8 @@ def main():
     # Initialization
     cfg, predictor = initialization()
 
-    # Streamlit initialization
-    #st.title("Instance Segmentation")
     st.title("Detector de Granos de Café")
+    st.write("Suba la imagen en la que desea realizar las predicciones")
     
     # Retrieve image
     uploaded_img = st.file_uploader("Choose an image...", type=['jpg', 'jpeg', 'png'])
