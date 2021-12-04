@@ -148,7 +148,7 @@ def main():
 
     st.title("Detector de Granos de Café")
     st.write("Suba la imagen en la que desea realizar las predicciones.")
-    st.write("Cada vez que suba una image, se reemplazará la anterior.")
+    st.write("Cada vez que suba una imagen se reemplazará la anterior.")
     
     # Retrieve image
     uploaded_img = st.file_uploader("Choose an image...", type=['jpg', 'jpeg', 'png'])
